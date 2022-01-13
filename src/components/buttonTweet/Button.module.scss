@@ -1,0 +1,18 @@
+@import "./../../libs/variables.scss";
+
+.container{
+    background: $blue;
+    border: none;
+    padding: 17px;
+    width: 100%;
+    border-radius: $bRadius;
+    font-size: 1.1rem;
+    color: $white;
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+        background: darken($blue, 10%);
+    }
+}

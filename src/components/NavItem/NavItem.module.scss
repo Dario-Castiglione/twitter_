@@ -1,0 +1,29 @@
+@import "./../../libs/variables.scss";
+.container{
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: $bRadius;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: $transition;
+    
+    .img{
+        width: 30px;
+        height: 30px;
+    }
+    p{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.1rem;
+    }
+    &:first-child{
+        margin-top: 5px;
+    }
+    &:hover{
+        background: $extraLightGray;
+    }
+}
