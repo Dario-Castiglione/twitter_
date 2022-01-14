@@ -1,7 +1,8 @@
 @import "./../../libs/variables.scss";
 .container{
-    margin: 15px 0;
+    margin: 0 0 15px;
     padding: 5px;
+    
     &:hover{
         background: $extraExtraLightGray;
     }
@@ -15,6 +16,8 @@
     .flexed{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        height: fit-content;
         span{
             width: 25px;
             height: 25px;

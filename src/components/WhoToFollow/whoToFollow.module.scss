@@ -1,0 +1,21 @@
+@import "../../libs/variables.scss";
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    .nameAndTitle{
+        display: flex;
+        p{
+            margin-left: 15px;
+            font-weight: 600;
+        }
+        
+    }
+    .subtitle{
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: $darkGray;
+    }
+}

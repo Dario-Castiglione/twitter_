@@ -1,13 +1,13 @@
 import styles from "./post.module.scss"
-import { formatDistance, subDays } from 'date-fns';
+import { formatDistance } from 'date-fns';
 import { it } from 'date-fns/locale';
-
+import "../../libs/common.scss";
 const post = (e) => {
     return(
         <div className={styles.container}>
 
             <div>
-                <img src={e.data.user_img}  alt="image" width={50} height={50} />
+                <img className="userImg" src={e.data.user_img}  alt="users" width={50} height={50} />
             </div>
 
             <div>

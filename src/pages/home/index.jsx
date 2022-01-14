@@ -1,21 +1,18 @@
-import styles from "./Home.module.scss";
-import UpTitle from "../../components/UpTitle";
 import { useState, useEffect } from "react";
-import Post from "../../components/post";
-import Trend from "../../components/Trend";
 import { http } from "../../libs/http";
+import Post from "../../components/post";
+import UpTitle from "../../components/UpTitle";
+import TrendList from "../../components/TrendList" ;
+import WhoToFollowList from "../../components/WhoToFollowList/WhoToFollowList";
+import styles from "./Home.module.scss";
 
 const posts = [];
-const trends = [];
-
 const Home = () => {
   const [allPosts, setAllPosts] = useState(posts);
-  const [allTrends, setAllTrends] = useState(trends);
 
   useEffect(() => {
     http("/post").then((data) => setAllPosts(data));
 
-    http("/trends").then((data) => setAllTrends(data));
   }, []);
 
   return (
@@ -29,10 +26,8 @@ const Home = () => {
 
       <div className={styles.sideContent}>
 
-        {allTrends.map((element, index) => (
-          <Trend key={index} data={element} />
-        ))}
-
+        <TrendList />
+        <WhoToFollowList/>
       </div>
     </>
   );

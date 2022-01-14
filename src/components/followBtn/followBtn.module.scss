@@ -1,0 +1,14 @@
+@import "../../libs/variables.scss";
+
+.btn{
+    color: $white;
+    background: $black;
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+    border-radius: $bRadius;
+    cursor: pointer;
+    &:hover{
+        background: lighten($black, 10%);
+    }
+}
