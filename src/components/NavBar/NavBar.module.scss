@@ -1,4 +1,19 @@
+@import "./../../libs/variables.scss";
+
 .container{
     //border: 1px solid red;
     width: 200px;
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        color: $black;
+        &:visited{
+          color: $black;
+        }
+
+      }
+
+    }
+    
   }

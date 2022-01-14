@@ -7,8 +7,8 @@ const array = [];
 
 const WhoToFollowList = () => {
 
-    http("/account").then(data => setFollowMe(data))
     useEffect(() => {
+        http("/account").then(data => setFollowMe(data))
 
     }, []);
 
