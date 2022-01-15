@@ -1,17 +1,1 @@
 
-.main,
-.sideContent{
-  //border: 1px solid red;
-  height: 100vh;
-  overflow-y: scroll;
-}
-.main{
-  width: 500px;
-}
-.sideContent{
-  //border: 1px solid red;
-  width: 300px;
-}
-::-webkit-scrollbar {
-  width: 0px;
-}

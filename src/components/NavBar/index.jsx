@@ -56,7 +56,9 @@ const NavBar = (props) => {
                 {navItem.map((element,index) => 
                     <li key={index}>
 
-                        <Link className={styles.active} to={element.link} > 
+
+
+                        <Link  to={element.link} > 
                             <NavItem img={element.img}  item={element.name} />
                         </Link> 
 

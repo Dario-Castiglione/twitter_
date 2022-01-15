@@ -16,7 +16,7 @@ function App() {
     <NavBar/>
     <Routes>
       <Route path="/" element={<Home />}/>
-      <Route path="" element={<Home />}/>
+      <Route path="/twitter_" element={<Home />}/>
       <Route path="/Home" element={<Home />}/>
       <Route path="/Explore" element={<Explore />}/>
       <Route path="/Messages" element={<Messages />}/>

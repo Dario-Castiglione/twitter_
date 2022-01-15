@@ -3,6 +3,8 @@ import styles from "./NavItem.module.scss"
 const NavItem = (props) => {
 
     return (
+
+
         <div className={styles.container}>
             <div className={styles.img}>
                 {props.img}
@@ -11,6 +13,7 @@ const NavItem = (props) => {
             {props.item && <p>{props.item}</p>}
 
         </div>
+
     
         
     );
